@@ -342,3 +342,40 @@ footer > p { color: #566b65; font-family: var(--font-geist-mono), monospace; fon
   html { scroll-behavior: auto; }
   *, *::before, *::after { transition-duration: .01ms !important; }
 }
+
+
+/* GroceryManager product demo */
+.demo-note { margin: 25px 0 0; display: flex; align-items: flex-start; gap: 10px; color: #91aaa3; font-size: 12px; line-height: 1.6; }
+.demo-note span { flex: 0 0 auto; width: 7px; height: 7px; margin-top: .55em; border-radius: 50%; background: var(--acid); box-shadow: 0 0 14px rgba(202,255,74,.7); }
+.demo-kicker { position: absolute; z-index: 4; top: 28px; left: 30px; padding: 9px 12px; display: inline-flex; align-items: center; gap: 8px; border: 1px solid rgba(202,255,74,.18); border-radius: 999px; background: rgba(5,20,17,.76); color: #a9bbb6; font-family: var(--font-geist-mono), monospace; font-size: 9px; letter-spacing: .09em; text-transform: uppercase; backdrop-filter: blur(12px); }
+.demo-kicker i { width: 7px; height: 7px; border-radius: 50%; background: var(--acid); box-shadow: 0 0 13px var(--acid); animation: demo-pulse 1.8s ease-in-out infinite; }
+.demo-phone { width: 270px; height: 520px; padding: 0; overflow: hidden; transform: rotate(1.5deg); background: #07100f; }
+.demo-phone::after { display: none; }
+.grocery-demo { width: 100%; height: 100%; display: block; object-fit: cover; background: #07100f; }
+.grocery-demo:focus-visible { outline: 3px solid var(--acid); outline-offset: 5px; }
+.grocery-demo::-webkit-media-controls-panel { background: linear-gradient(transparent, rgba(0,0,0,.86)); }
+
+/* Restrained motion and interaction polish */
+.reveal-item { opacity: 0; transform: translateY(22px); transition: opacity .7s ease var(--reveal-delay, 0ms), transform .7s cubic-bezier(.2,.8,.2,1) var(--reveal-delay, 0ms); }
+.reveal-item.reveal-visible { opacity: 1; transform: translateY(0); }
+.project-card, .skill-grid article { transition: transform .28s ease, border-color .28s ease, background-color .28s ease, box-shadow .28s ease; }
+
+@media (hover: hover) {
+  .project-card:hover { transform: translateY(-7px); border-color: rgba(202,255,74,.24); box-shadow: 0 24px 60px rgba(0,0,0,.2); }
+  .skill-grid article:hover { transform: translateY(-5px); background: rgba(202,255,74,.035); }
+}
+
+@keyframes demo-pulse {
+  0%, 100% { opacity: .55; transform: scale(.88); }
+  50% { opacity: 1; transform: scale(1.14); }
+}
+
+@media (max-width: 720px) {
+  .demo-kicker { top: 20px; left: 20px; }
+  .demo-phone { width: 236px; height: 454px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .demo-kicker i { animation: none; }
+  .reveal-item, .reveal-item.reveal-visible, .project-card, .skill-grid article { opacity: 1; transform: none; transition: none; }
+}
