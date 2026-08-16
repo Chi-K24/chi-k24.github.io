@@ -11,4 +11,8 @@ Personal portfolio for Chi Le, a software developer and network systems technolo
 - [Living-Room Media + Retro Gaming](https://github.com/Chi-K24/raspberry-pi-home-cloud/blob/main/docs/MEDIA_AND_EMULATION.md) — Kodi, RetroPie, EmulationStation, and hardware-accelerated graphics on Raspberry Pi 5
 - WasteWatcher — mobile food-tracking prototype using CameraX, Kotlin, Redis, and voice input
 
+## Experience
+
+The live site includes responsive project filtering, accessible mobile navigation, motion-reduction support, a visual technology toolbox, and a dedicated printable résumé view.
+
 Live site: https://chi-k24.github.io/
