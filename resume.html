@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chi Le | Résumé</title>
+  <meta name="description" content="Résumé of Chi Le, software developer and network systems technologist in Mississauga, Ontario.">
+  <meta name="theme-color" content="#071614">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    :root { --ink:#071614; --paper:#f4f2eb; --acid:#caff4a; --mint:#63e6be; --muted:#62736e; color-scheme:light; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#dde4df; color:#14241f; font-family:"Segoe UI Variable",Aptos,"Segoe UI",Arial,sans-serif; }
+    a { color:inherit; text-decoration:none; }
+    .toolbar { width:min(100% - 32px,980px); margin:24px auto 0; display:flex; justify-content:space-between; align-items:center; gap:14px; }
+    .toolbar a,.toolbar button { min-height:44px; padding:0 16px; display:inline-flex; align-items:center; border:1px solid rgba(7,22,20,.18); border-radius:10px; background:white; color:#17332b; font:700 12px inherit; cursor:pointer; }
+    .toolbar button { border-color:var(--ink); background:var(--ink); color:var(--paper); }
+    .page { width:min(100% - 32px,980px); min-height:1260px; margin:18px auto 40px; background:var(--paper); box-shadow:0 28px 80px rgba(7,22,20,.18); }
+    header { padding:54px 58px 44px; display:grid; grid-template-columns:1fr auto; gap:30px; background:var(--ink); color:var(--paper); }
+    .eyebrow,.label { margin:0; color:var(--mint); font:700 10px "Cascadia Mono",Consolas,monospace; letter-spacing:.14em; text-transform:uppercase; }
+    h1 { margin:12px 0 8px; font-size:54px; line-height:.95; letter-spacing:-.055em; }
+    header h2 { margin:0; color:#a8bbb5; font-size:17px; font-weight:500; }
+    .contact { display:grid; align-content:end; justify-items:end; gap:8px; color:#b9cac5; font-size:12px; }
+    .contact a { color:var(--acid); }
+    main { padding:46px 58px 54px; display:grid; grid-template-columns:1.35fr .65fr; gap:48px; }
+    section + section { margin-top:34px; }
+    h3 { margin:8px 0 20px; font-size:25px; letter-spacing:-.035em; }
+    .summary { margin:0; color:#445852; font-size:14px; line-height:1.75; }
+    .entry { padding:0 0 24px; border-bottom:1px solid rgba(7,22,20,.12); }
+    .entry + .entry { padding-top:24px; }
+    .entry:last-child { border-bottom:0; }
+    .entry-top { display:flex; justify-content:space-between; gap:18px; color:#527066; font:700 9px "Cascadia Mono",Consolas,monospace; letter-spacing:.08em; text-transform:uppercase; }
+    .entry h4 { margin:10px 0 4px; font-size:19px; }
+    .entry h5 { margin:0; color:#536760; font-size:11px; }
+    .entry p { margin:11px 0 0; color:#53655f; font-size:12px; line-height:1.65; }
+    .project { padding:15px 0; border-bottom:1px solid rgba(7,22,20,.1); }
+    .project:last-child { border-bottom:0; }
+    .project strong { display:block; font-size:14px; }
+    .project p { margin:5px 0 0; color:#5b6d67; font-size:11px; line-height:1.55; }
+    .skills { display:flex; flex-wrap:wrap; gap:7px; }
+    .skills span { padding:7px 9px; border:1px solid rgba(7,22,20,.14); border-radius:7px; color:#415650; font:700 9px "Cascadia Mono",Consolas,monospace; }
+    .education strong { display:block; margin:10px 0 4px; font-size:15px; }
+    .education p { margin:0; color:#5b6d67; font-size:12px; line-height:1.55; }
+    .award { padding:18px; border-radius:13px; background:#e7ecd9; border:1px solid rgba(76,110,53,.16); }
+    .award strong { display:block; margin-top:7px; font-size:14px; }
+    .award p { margin:5px 0 0; color:#52634e; font-size:11px; line-height:1.5; }
+    footer { padding:20px 58px; display:flex; justify-content:space-between; border-top:1px solid rgba(7,22,20,.12); color:#71817c; font:700 9px "Cascadia Mono",Consolas,monospace; text-transform:uppercase; letter-spacing:.08em; }
+    @media (max-width:760px) {
+      .toolbar,.page { width:min(100% - 20px,980px); }
+      header { padding:38px 28px; grid-template-columns:1fr; }
+      .contact { justify-items:start; }
+      main { padding:36px 28px; grid-template-columns:1fr; gap:36px; }
+      h1 { font-size:45px; }
+      footer { padding:20px 28px; }
+    }
+    @media print {
+      @page { size:letter; margin:0; }
+      body { background:white; }
+      .toolbar { display:none; }
+      .page { width:100%; min-height:0; margin:0; box-shadow:none; }
+      header { padding:34px 42px 28px; }
+      main { padding:30px 42px 32px; gap:36px; }
+      section + section { margin-top:24px; }
+      .entry { padding-bottom:16px; }
+      .entry + .entry { padding-top:16px; }
+      footer { padding:14px 42px; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="toolbar" aria-label="Résumé actions"><a href="index.html">← Portfolio</a><button type="button" onclick="window.print()">Print / save PDF</button></nav>
+  <article class="page">
+    <header>
+      <div><p class="eyebrow">Software · Systems · Networks</p><h1>Chi Le</h1><h2>Software Developer &amp; Network Systems Technologist</h2></div>
+      <div class="contact"><span>Mississauga, Ontario</span><a href="https://chi-k24.github.io/">chi-k24.github.io</a><a href="https://github.com/Chi-K24">github.com/Chi-K24</a></div>
+    </header>
+    <main>
+      <div>
+        <section><p class="label">Profile</p><h3>Builder across the stack</h3><p class="summary">Software developer and network systems technologist who moves comfortably from Kotlin and Firebase to Cisco switching, Linux, Docker, and self-hosted infrastructure. Focused on technology that is reliable, understandable, and useful beyond the demo.</p></section>
+        <section><p class="label">Experience</p><h3>Professional background</h3><div class="entry"><div class="entry-top"><span>2024 — Present</span><span>Mississauga, ON</span></div><h4>Commercial Sales Specialist</h4><h5>PartSource · Canadian Tire Corporation</h5><p>Manage commercial customer relationships, ordering and receiving workflows, invoicing, and day-to-day system troubleshooting in a high-accountability retail environment.</p></div><div class="entry"><div class="entry-top"><span>Apr 2021 — Aug 2023</span><span>Sheridan College</span></div><h4>Jr. Network System Administrator</h4><h5>Information Systems Group · Co-op</h5><p>Supported campus network operations across Cisco 9300/3850 switching, VLANs, ACLs, monitoring, server administration, security hardening, and technical documentation.</p></div></section>
+        <section><p class="label">Selected work</p><h3>Projects with real outcomes</h3><div class="project"><strong>GroceryManager</strong><p>Award-winning Android application using Kotlin, Firebase, Google ML Kit, and AI-assisted recipe generation to reduce household food waste.</p></div><div class="project"><strong>Private Home Cloud</strong><p>Raspberry Pi 5 infrastructure running Docker, Immich, private DNS, VPN access, monitoring, storage, and documented recovery workflows.</p></div><div class="project"><strong>Raspberry Pi Image Backup</strong><p>Compact, restorable imaging of a 2 TB NVMe system to a 1 TB USB target, with Docker-safe weekly systemd updates and filesystem validation.</p></div></section>
+      </div>
+      <aside>
+        <section class="award"><p class="label">Recognition</p><strong>Most Innovative Capstone Project</strong><p>GroceryManager · Sheridan College</p></section>
+        <section><p class="label">Education</p><h3>Advanced Diploma</h3><div class="education"><strong>Computer Systems Technology</strong><p>Software Development &amp; Network Engineering<br>Sheridan College · 2021—2023</p></div></section>
+        <section><p class="label">Technical toolbox</p><h3>Capabilities</h3><div class="skills"><span>Java</span><span>Kotlin</span><span>Python</span><span>JavaScript</span><span>HTML/CSS</span><span>.NET</span><span>Firebase</span><span>SQL</span><span>Linux</span><span>Docker</span><span>Git</span><span>Cisco IOS</span><span>VLANs</span><span>ACLs</span><span>DNS</span><span>WireGuard</span><span>SNMP</span></div></section>
+        <section><p class="label">Infrastructure work</p><h3>Additional builds</h3><div class="project"><strong>Local Home Automation</strong><p>Home Assistant, authenticated MQTT, Zigbee2MQTT, and Sonoff coordinator.</p></div><div class="project"><strong>Media + Retro Gaming</strong><p>Kodi, RetroPie, EmulationStation, and hardware-accelerated graphics.</p></div></section>
+      </aside>
+    </main>
+    <footer><span>Chi Le · 2026</span><span>Portfolio résumé</span></footer>
+  </article>
+</body>
+</html>
