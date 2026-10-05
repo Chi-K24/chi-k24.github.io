@@ -112,15 +112,16 @@ Fast barcode and expiry-date capture prototype that evolved into the completed G
 </tr>
 </table>
 
-### [LEMON Manuals Server ↗](https://github.com/Chi-K24/raspberry-pi-home-cloud/blob/main/docs/LEMON_MANUALS.md)
+### [LEMON Workspace ↗](https://github.com/Chi-K24/raspberry-pi-home-cloud/blob/main/docs/LEMON_MANUALS.md)
 
-Deployment of the upstream Rust-based automotive manuals server on Raspberry Pi,
-with native systemd service management and an operations runbook.
+Responsive desktop and mobile frontend customization of the upstream LEMON
+manuals server: saved pages, index filtering, themes, reading tools and diagram zoom.
 
-`Linux` `Raspberry Pi` `systemd`
+`JavaScript` `CSS` `Linux` `systemd`
 
-**Proof:** Service confirmed enabled and running. Application and content credited
-to LEMON; contribution focused on deployment and operations.
+**Proof:** Chromium interface checks passed on synthetic pages; native Pi build
+succeeded and the updated interface was confirmed working. Upstream application
+and manual content remain credited to LEMON.
 
 ## Built for more than appearance
 
